@@ -1,17 +1,21 @@
+def is_even(number):
+    return number % 2 == 0
+
 def even_number_of_evens(numbers):
-    if len(numbers) < 2:
-        return False
-    elif len(numbers) >= 2:  
-        count = 0
-        for i in numbers:
-            if i % 2 == 0:
-                count += 1
-        if count < 1:
-            return False
-        elif count % 2 == 0:
-            return True
-        else:        
-            return False
+    # count = 0    
+    # for i in numbers:
+    #     if is_even(i):
+    #         count += 1
+    # if count < 1:
+    #     return False
+    # elif is_even(count):
+    #     return True
+    # else:        
+    #     return False
+    
+    # Code institute's solution
+    evens = sum([1 for n in numbers if is_even(n)])
+    return False if evens == 0 else is_even((evens))
 
 assert even_number_of_evens([]) == False, "No numbers"
 assert even_number_of_evens([2]) == False, "One even number"
