@@ -27,3 +27,7 @@ test_are_equal(get_change(9), [5, 2, 2])
 test_are_equal(get_change(35, usd_coins), [25, 10])
 
 print("All tests passed!")
+
+# # additional codes here
+# https://github.com/Code-Institute-Solutions/practical-python-tdd/blob/master/08-vending_machine_part_two/challenge_one_sample_solution/vending_machine.py
+# https://github.com/Code-Institute-Solutions/practical-python-tdd/blob/master/08-vending_machine_part_two/challenge_one_sample_solution/byotest.py#L56
